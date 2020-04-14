@@ -29,10 +29,7 @@
     "prop-types": "^15.5.8",
     "raf": "^3.3.0"
   },
-  "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
@@ -46,10 +43,10 @@
     "enzyme": "^2.8.2",
     "jsdom": "8.0.4",
     "mocha": "^5",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router-dom": "^4.2.2",
-    "react-test-renderer": "^15.5.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^2.5.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
