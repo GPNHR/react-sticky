@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
+import { Context } from './Context';
+
 export default class Sticky extends Component {
   static propTypes = {
     topOffset: PropTypes.number,
@@ -18,11 +20,7 @@ export default class Sticky extends Component {
     disableHardwareAcceleration: false
   };
 
-  static contextTypes = {
-    subscribe: PropTypes.func,
-    unsubscribe: PropTypes.func,
-    getParent: PropTypes.func
-  };
+  static contextType = Context;
 
   state = {
     isSticky: false,
@@ -30,7 +28,7 @@ export default class Sticky extends Component {
     style: {}
   };
 
-  componentWillMount() {
+  componentDidMount() {
     if (!this.context.subscribe)
       throw new TypeError(
         "Expected Sticky to be mounted within StickyContainer"

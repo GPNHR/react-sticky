@@ -1,7 +1,7 @@
 {
-  "name": "react-sticky",
-  "version": "6.0.3",
-  "description": "Sticky component for React",
+  "name": "renewed-react-sticky",
+  "version": "6.0.4",
+  "description": "Sticky component for React, forked from https://github.com/captivationsoftware/react-sticky",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -9,12 +9,11 @@
     "demos:start": "webpack-dev-server --watch",
     "demos:build": "NODE_ENV=production webpack",
     "prepublish": "npm run prepare",
-    "prepare": "npm run clean && npm run compile",
-    "test": "mocha test/setup.js test/spec/*.js"
+    "prepare": "npm run clean && npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/captivationsoftware/react-sticky"
+    "url": "https://github.com/GPNHR/react-sticky"
   },
   "keywords": [
     "react-component",
@@ -29,10 +28,7 @@
     "prop-types": "^15.5.8",
     "raf": "^3.3.0"
   },
-  "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
@@ -46,10 +42,10 @@
     "enzyme": "^2.8.2",
     "jsdom": "8.0.4",
     "mocha": "^5",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router-dom": "^4.2.2",
-    "react-test-renderer": "^15.5.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^2.5.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
